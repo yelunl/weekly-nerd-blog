@@ -8,72 +8,138 @@
     <script src="./js/script.js" defer></script>
   </head>
   <body>
-    <header>
-      <p>Guest speaker</p>
-      <h1>Kilian Valkhof</h1>
-    </header>
     <main>
-      <blockquote>
-        Rule of least power: choose the least powerful language suitable for a
-        given purpose.
-      </blockquote>
-      <h2>Summary</h2>
-      <p>
-        Today's lecture is was all about using HTML and CSS as much as you can
-        without using too much JavaScript. Because the browser is built with
-        HTML, it has many built in features that a lot of developers would try
-        to built with Javascript. The benefits of using HTML over Javascript is
-        that HTML also has built in accessibility features and do not require an
-        endless list of packages and node modules. During this lecture, Kilian
-        Valkhof talked about many different ways one can built features using
-        only HTML and CSS.
-      </p>
-      <ol>
-        <li>
-          <h3>Custom toggle</h3>
+      <article class="wholeText">
+        <hgroup>
+          <h1>
+            Stop Using JavaScript for That: Moving Features from JS to CSS and
+            HTML.
+          </h1>
+          <p>Kilian Valkhof</p>
+        </hgroup>
+        <footer>
+          <time>February 7, 2024</time>
+        </footer>
+        <article class="about">
+          <h2>About Kilian Valkhof</h2>
+          <img src="./images/kilian.jpeg" alt="headshot of Kilian Valkhof" />
           <p>
-            To create a toggle element one can use checkbox and design it into a
-            toggle element
+            Kilian is a developer that is part of the Electron Governance team.
+            He has builts tools like the web browser Polypane. It's a browser
+            for developers. He gave us a guest lectures about using HTML and CSS
+            over JavaScript when possible.
           </p>
-        </li>
-        <li>
-          <h3>Focus-visible</h3>
-          <p>Instead of using focus use focus-visible.</p>
-        </li>
-        <li>
-          <h3>Data list and options</h3>
+        </article>
+        <article>
+          <h2>Summary of Kilian's lecture</h2>
+          <blockquote>
+            Rule of least power: choose the least powerful language suitable for
+            a given purpose.
+          </blockquote>
+
           <p>
-            It's a way that when user types in a text field, options show while
-            typing.
+            Today's lecture is was all about using HTML and CSS as much as you
+            can without using too much JavaScript. Because the browser is built
+            with HTML, it has many built in features that a lot of developers
+            would try to built with Javascript. The benefits of using HTML over
+            Javascript is that HTML also has built in accessibility features and
+            do not require an endless list of packages and node modules. During
+            this lecture, Kilian Valkhof talked about many different ways one
+            can built features using only HTML and CSS.
           </p>
-        </li>
-        <li>
-          <h3>Color picker</h3>
-          <p>The color picker tool built into HTML using type=“color”</p>
-        </li>
-        <li>
-          <h3>Smooth scrolling</h3>
+          <ul>
+            <li>
+              <h3>Custom toggle</h3>
+              <p>
+                To create a toggle element one can use checkbox and design it
+                into a toggle element
+              </p>
+            </li>
+            <li>
+              <h3>Focus-visible</h3>
+              <p>Instead of using focus use focus-visible.</p>
+            </li>
+            <li>
+              <h3>Data list and options</h3>
+              <p>
+                It's a way that when user types in a text field, options show
+                while typing.
+              </p>
+            </li>
+            <li>
+              <h3>Color picker</h3>
+              <p>The color picker tool built into HTML using type=“color”</p>
+            </li>
+            <li>
+              <h3>Smooth scrolling</h3>
+              <p>
+                When user clicks on a link which leads to another heading of the
+                page, it scrolls smoothly instead instance. “Scroll-behaviour:
+                smooth;”
+              </p>
+            </li>
+            <li>
+              <h3>Position sticky</h3>
+              <p>Use position sticky instead of fixed</p>
+            </li>
+            <li>
+              <h3>Carousels</h3>
+              <p>Use Scroll-snap-* to make carousels</p>
+            </li>
+            <li>
+              <h3>Accordion</h3>
+              <p>
+                Use 'detail' and 'summary' to make accordion. Can also use the
+                ::marker to change the triangle. Keep all the accordions open
+                when user clicks to open another accordion.
+              </p>
+            </li>
+            <li>
+              <h3>Dialog</h3>
+              <p>
+                Use dialog html to make an alert message. To blur the background
+                when dialog is open use ::backdrop
+              </p>
+            </li>
+            <li>
+              <h3>:has()</h3>
+              <p>Selector to find certain specific elements</p>
+            </li>
+            <li>
+              <h3>Fieldsizing:content</h3>
+              <p>Text field that resizes while you type</p>
+            </li>
+            <li>
+              <h3>Masonry layout</h3>
+              <p>Grid-template-rows: masonry</p>
+            </li>
+            <li>
+              <h3>Select list</h3>
+              <p>
+                Uses 'selectList' and 'option' elements. Works like 'select' but
+                better.
+              </p>
+            </li>
+            <li>
+              <h3>Scroll driven animation</h3>
+              <p>Create animation on scroll</p>
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h2>Conclusion: what I learned</h2>
           <p>
-            When user clicks on a link which leads to another heading of the
-            page, it scrolls smoothly instead instance. “Scroll-behaviour:
-            smooth;”
+            There are many different ways to create features that only use HTML
+            instead of JavaScript. There are many benefits to using HTML and CSS
+            over JavaScript. What I learned is to always use basic HTML and CSS
+            to get something done. If not possible then use Javascript. There
+            are many tags and features that i didn't know existed in HTML so it
+            was certainly an eye opener. I would look out for doing things with
+            HTML and CSS more whenever I can, and when not possible I would use
+            JavaScript.
           </p>
-        </li>
-        <li>
-          <h3>Position sticky</h3>
-          <p>Use position sticky instead of fixed</p>
-        </li>
-      </ol>
-      <h2>What I learned</h2>
-      <p>
-        There are many different ways to create features that only use HTML
-        instead of JavaScript. There are many benefits to using HTML and CSS
-        over JavaScript. What I learned is to always use basic HTML and CSS to
-        get something done. If not possible then use Javascript. There are many
-        tags and features that i didn't know existed in HTML so it was certainly
-        an eye opener. I would look out for doing things with HTML and CSS more
-        whenever I can, and when not possible I would use JavaScript.
-      </p>
+        </article>
+      </article>
     </main>
   </body>
 </html>
