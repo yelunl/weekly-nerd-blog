@@ -21,34 +21,184 @@
           <h2>About Fenna de Wilde</h2>
           <img src="./images/fenna.jpeg" alt="headshot of Fenna de Wilde" />
           <p>
-            Kilian is a developer that is part of the Electron Governance team.
-            He has builts tools like the web browser Polypane. It's a browser
-            for developers. He gave us a guest lectures about using HTML and CSS
-            over JavaScript when possible.
+            Fenna is a creative developer working at Bakken & Bæck. She has
+            developed website called Phantom. On this website she has put extra
+            emphasis on accessibility. In today's lecture she shares her
+            experience and tips about making a site accessible.
           </p>
         </article>
         <article>
           <h2>Summary of Fenna's lecture</h2>
           <p>
             Today's lecture we have a guest called Fenna de Wilde. She is a
-            creative developer at Bakken & Bæck. She talked about how to make a
-            website accessible using different techniques she learned at
-            Phantom and things she would have done differently to make the site
-            accessible. She gave us a list of different techniques to use to
-            make a website accessible.
+            creative developer at Bakken & Bæck.
           </p>
-          <h3>focus state</h3>
-          <p>
-            always add a focus state for users that use your site with a
-            keyboard
-          </p>
+          <ul>
+            <li>
+              <h3>focus state</h3>
+              <p>
+                always add a focus state for users that use your site with a
+                keyboard by tabbing. Use the :focus-visible instead of :focus.
+                One can als create a custom focus state for certain elements.
+                Use a special class for these elements
+              </p>
+            </li>
+            <li>
+              <h3>Aria-label</h3>
+              <p>
+                Gives a descriptive text about an element. Mostly used on
+                elements that don't provide enough context
+              </p>
+            </li>
+            <li>
+              <h3>Aria-expanded</h3>
+              <p>
+                Gives the state of an element wether its expanded or not. Like a
+                menu, accordion, dropdown etc. It is either 'true' or 'false'
+              </p>
+            </li>
+            <li>
+              <h3>Aria-live</h3>
+              <p>
+                Reads dynamic changes made to the page. It has 3 values: off
+                (default), polite(waits then reads), assertive(immediately reads
+                the changes, even when screen reader is busy)
+              </p>
+            </li>
+            <li>
+              <h3>Aria-atomic</h3>
+              <p>
+                Paired together with the aria-live. true(read the entire changed
+                sections), false(reads only the changed nodes).
+              </p>
+            </li>
+            <li>
+              <h3>Carousels</h3>
+              <p>
+                Carousels must have the role="region" or the semantic section
+                element. It also needs aria-roledescription="carousel" and
+                aria-labelledby or aria-label.
+              </p>
+            </li>
+            <li>
+              <h3>Carousels slider</h3>
+              <p>
+                The carousel slider must have role="group" and
+                aria-roledescription="slide" and aria-labelledby or aria-label
+                to tell what slide you are on. for example: 1 of 3.
+              </p>
+            </li>
+            <li>
+              <h3>Carousels hide invisible slides</h3>
+              <p>
+                When a slider is not visible on the screen, it must be hidden by
+                the screen reader. Use aria-hidden="true" on the wrapper and
+                tabindex="-1" on all the children that are focusable.
+              </p>
+            </li>
+            <li>
+              <h3>Carousels avoid lists</h3>
+              <p>
+                Avoid using li elements. It won't inform users about the current
+                li-item or when going inside/outside the element. When using li
+                it also tells you how many list items there are in total,
+                including the hidden ones.
+              </p>
+            </li>
+            <li>
+              <h3>Carousels controls</h3>
+              <p>
+                The carousel controls must have the role="group". And it must
+                have aria-label to tell what the controls do. The control that
+                shows the current slide must have the aria-disabled="true".
+              </p>
+            </li>
+            <li>
+              <h3>Focus guards</h3>
+              <p>
+                Focus guards helps to navigate a site while putting focus on
+                certain elements on top without accidentally navigating to the
+                background. This helps to give the user good tab navigation
+                without getting disoriented.
+              </p>
+            </li>
+            <li>
+              <h3>Dialog element</h3>
+              <p>
+                Dialog creates this focusable overlay where the user can't tab
+                outside of the element.
+              </p>
+            </li>
+            <li>
+              <h3>Color contrast</h3>
+              <p>
+                Color contrast can vary between 1 and 21. According to the WCAG
+                guidelines, the contrast of text with it's background must be
+                4,5:1. Big text 24px or 18px bold and important icons must have
+                a contrast of 3:1. Logo's and decorative text are excluded.
+              </p>
+            </li>
+            <li>
+              <h3>Lighthouse audit</h3>
+              <p>
+                To test your site for contrast, you can test it with the
+                Lighthouse audit and find out what elements have low contrasts.
+                You can also use the dev tools to see the contrast along with
+                other accessibility features.
+              </p>
+            </li>
+            <li>
+              <h3>Minimal fontsize of 16px</h3>
+              <p>
+                To make text readable site must have a minimal fontsize of 16px.
+              </p>
+            </li>
+            <li>
+              <h3>line length of 50 - 75 characters</h3>
+              <p>
+                the optimal line length is between 50 - 75 characters. That also
+                includes spaces. It makes it more comfortable to read one line
+                after another and prevents people from getting lost. On bigger
+                screen sizes like desktop, you must add a max-width to prevent
+                to get long lines of text. You can use the ch unit in css, 1 ch
+                is the width of the 0 character.
+              </p>
+            </li>
+            <li>
+              <h3>alt text on images</h3>
+              <p>
+                You must use alt text on images for people who can not see the
+                images. The alt text gives a short description on what can be
+                seen on the image. Don't start an alt text with 'a picture
+                of...'
+              </p>
+            </li>
+            <li>
+              <h3>Semantic HTML</h3>
+              <p>
+                Using semantic HTML helps to structure the content better in a
+                meaningful way for screen reader users and it prevents using too
+                many aria-attributes. The website can also be found much easier
+                in search engines.
+              </p>
+            </li>
+            <li>
+              <h3>Extra accessibility tips</h3>
+              <p>
+                If you want to add some extra accessibility to your site
+                consider the following: skip to content button,
+                prefers-reduced-motion, all autoplay videos/carousels must be
+                able to get paused and use a screen reader yourself. 
+              </p>
+            </li>
+          </ul>
         </article>
         <article>
           <h2>What I learned</h2>
           <p>
             Things i learned is to make websites accessible and how to do that.
             We got introduced to using common ARIA attributes to make a website
-            more screenreader accessible. There were many things said that were
+            more screen reader accessible. There were many things said that were
             new to me, so it was certainly a very interesting lecture.
           </p>
         </article>
