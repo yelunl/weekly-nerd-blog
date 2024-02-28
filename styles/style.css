@@ -141,11 +141,12 @@ main > .wholeText {
 
 .blogCards {
     display: flex;
+    flex-wrap: wrap;
     gap: 2.5rem;
 }
 
 .blogCards li {
-  box-shadow: 0.3rem 0.3rem 1.3rem grey;
+  box-shadow: 0.3rem 0.3rem 1.3rem #80808054;
   width: 20rem;
   list-style: none;
   border-radius: 1rem;
@@ -175,5 +176,5 @@ a {
 }
 
 .blogCards li a div:nth-of-type(1) {
-    padding: 2rem;
+    padding: 1.5rem;
 }
