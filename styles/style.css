@@ -192,6 +192,7 @@ main > .wholeText {
 .blogCards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 2.5rem;
 }
 
