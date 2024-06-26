@@ -40,3 +40,35 @@ navLinks.forEach((link) => {
         }
     });
 });
+
+
+
+
+
+
+
+
+
+let x, y;
+
+const cards = document.querySelectorAll('.blogCards li');
+const section = document.querySelector('.blogCards');
+
+document.addEventListener('mousemove', (e) => {
+    console.log(e.clientX)
+    console.log(e.clientY)
+    console.log(e.target)
+    
+    cards.forEach(card => {
+    const rect = card.getBoundingClientRect();
+
+    console.log(rect)
+
+    x = e.clientX - rect.left;
+    y = e.clientY - rect.top;
+
+        card.style.setProperty('--mouseX', `${x}px`);
+        card.style.setProperty('--mouseY', `${y}px`);
+    
+    })
+})

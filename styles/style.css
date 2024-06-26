@@ -200,6 +200,46 @@ main > .wholeText {
   width: 20rem;
   list-style: none;
   border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+/* border */
+.blogCards li::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  z-index: -1;
+}
+
+/* circle hover effect */
+.blogCards li::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: var(--mouseY);
+  left: var(--mouseX);
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle 170px at 50% 50% , #27bb6c, transparent);
+  z-index: -1;
+}
+
+/* content */
+.blogCards a {
+  display: block;
+  box-sizing: border-box;
+    background: white;
+    width: calc(100% - 0.5rem);
+    height: calc(100% - 0.5rem);
+    transform: translate(0.25rem, 0.25rem);
+    border-radius: inherit;
 }
 
 a:not(p a) {
