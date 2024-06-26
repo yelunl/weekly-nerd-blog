@@ -7,12 +7,62 @@ body {
   padding: 2rem;
 }
 
+#goals, #reflections {
+  display: none;
+}
+
+header {
+  /* border: solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+header p {
+  padding: 0.5rem 0rem;
+}
+
+header img {
+  border-radius: 10rem;
+  width: 8rem;
+  height: 8rem;
+}
+
+nav {
+  /* border: solid black; */
+  box-shadow: 0.1rem 0.1rem 0.2rem #00000026;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: rgba(247, 247, 247, 0.672);
+}
+
+nav ul {
+  /* border: solid black; */
+  /* height: 100%; */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  list-style: none;
+}
+
+nav ul li:nth-of-type(2) a {
+  border-bottom: solid #27bb6c;
+  color: #27bb6c;
+}
+
+nav ul a {
+  /* border-bottom: solid #27bb6c; */
+  display: block;
+  padding: 0.5rem;
+}
+
 main > article:last-child {
   padding-bottom: 3rem;
 }
 
 h1 {
-  width: 48rem;
   font-size: 3rem;
 }
 
@@ -46,7 +96,7 @@ hgroup p {
 
 p {
   font-size: 1.063rem;
-  width: 48rem;
+  max-width: 48rem;
   line-height: 1.7rem;
   color: #767676;
 }
@@ -181,4 +231,27 @@ a:not(p a) {
 
 .blogCards li a div:nth-of-type(1) {
     padding: 1.5rem;
+}
+
+#goals * {
+  /* border: solid black; */
+}
+
+#goals article{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5rem;
+  margin-bottom: 3rem;
+}
+
+#goals article div {
+  /* width: 50%; */
+}
+
+#goals article img {
+  width: 40%;
+}
+
+#goals article:nth-of-type(2) div {
+  order: 1;
 }

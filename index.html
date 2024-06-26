@@ -10,6 +10,7 @@
 
     <body>
         <header>
+            <img src="./images/me.png" alt="avatar me" />
             <h1>Weekly Nerd Blog</h1>
             <p>
                 Hello, in this blog I will write summaries about guest lectures
@@ -17,9 +18,17 @@
                 personal goals and reflection.
             </p>
         </header>
+        <nav>
+            <ul>
+                <li><a href="#">My goals</a></li>
+
+                <li><a href="#">Blogs</a></li>
+
+                <li><a href="#">Reflections</a></li>
+            </ul>
+        </nav>
         <main>
-            <section>
-                <h2>Blog posts</h2>
+            <section id="blogs">
                 <ul class="blogCards">
                     <li>
                         <a href="./kilian.html">
@@ -56,16 +65,7 @@
                             </div>
                         </a>
                     </li>
-                    <li>
-                        <a href="./myPlans.html">
-                            <img src="./images/plans.gif" alt="plans" />
-                            <div>
-                                <p>About me</p>
-                                <h3>My plans for this minor (talk 1)</h3>
-                                <p>Things I want to learn during this minor</p>
-                            </div>
-                        </a>
-                    </li>
+
                     <li>
                         <a href="./jeffrey.html">
                             <img src="./images/jeffrey.jpeg" alt="jeffrey" />
@@ -139,16 +139,6 @@
                         </a>
                     </li>
                     <li>
-                        <a href="./myPlans2.html">
-                            <img src="./images/plans.gif" alt="my plans" />
-                            <div>
-                                <p>About me</p>
-                                <h3>My goals for this minor</h3>
-                                <p>Reflection so far. And my goals.</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
                         <a href="./robert.html">
                             <img src="./images/robert.jpeg" alt="robert" />
                             <div>
@@ -207,6 +197,30 @@
                             </div>
                         </a>
                     </li>
+                </ul>
+            </section>
+            <section id="reflections">
+                <ul class="blogCards">
+                    <li>
+                        <a href="./myPlans.html">
+                            <img src="./images/plans.gif" alt="plans" />
+                            <div>
+                                <p>About me</p>
+                                <h3>My plans for this minor (talk 1)</h3>
+                                <p>Things I want to learn during this minor</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./myPlans2.html">
+                            <img src="./images/plans.gif" alt="my plans" />
+                            <div>
+                                <p>About me</p>
+                                <h3>My goals for this minor and reflection (talk 2)</h3>
+                                <p>Reflection so far. And my goals.</p>
+                            </div>
+                        </a>
+                    </li>
                     <li>
                         <a href="./reflection.html">
                             <img src="./images/plans.gif" alt="reflection" />
@@ -221,6 +235,66 @@
                         </a>
                     </li>
                 </ul>
+            </section>
+
+            <section id="goals">
+                <article>
+                    <div>
+                        <h2>1. Get better at communicating</h2>
+                        <p>
+                            I want to improve my communication skills because I
+                            often find myself staying in the background. This
+                            time, I want to step forward and share my thoughts
+                            more often. I want to contribute more to team
+                            projects and ensure my input is heard.
+                        </p>
+                    </div>
+                    <img src="./images/Women talking-pana.svg" alt="" />
+                </article>
+
+                <article>
+                    <div>
+                        <h2>2. Practice Javascript logics</h2>
+                        <p>
+                            I want to become better in JavaScript and reduce my
+                            reliance on Google and ChatGPT for every Javascript
+                            problem. By focusing on understanding the logic
+                            behind my projects, I want to learn to solve
+                            JavaScript problems more on my own. This way it
+                            might help me feel more confident and capable as a
+                            programmer, so that i can really understand and
+                            write my own code.
+                        </p>
+                    </div>
+                    <img
+                        src="./images/JavaScript frameworks-amico.svg"
+                        alt=""
+                    />
+                </article>
+
+                <article>
+                    <div>
+                        <h2>3. Experiment more</h2>
+                        <p>
+                            I want to experiment more because I've been told I
+                            tend to play it too safe. Fear of underestimating
+                            the difficulty of tasks often holds me back, which
+                            might cause me to get stuck and make little
+                            progress. As a result, I stick mostly to what I
+                            already know, trying new things only minimally. Now
+                            as goal I want to try to experiment more and try new
+                            things.
+                        </p>
+                    </div>
+                    <img src="./images/Creative experiment-amico.svg" alt="" />
+                </article>
+
+                <!-- https://storyset.com/illustration/women-talking/pana -->
+
+                <!-- <a href="https://storyset.com/work">Work illustrations by Storyset</a> -->
+                <!-- https://storyset.com/illustration/creative-experiment/amico -->
+
+                <!-- https://storyset.com/illustration/javascript-frameworks/amico -->
             </section>
         </main>
     </body>
