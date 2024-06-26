@@ -12,7 +12,6 @@ body {
 }
 
 header {
-  /* border: solid black; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,7 +29,6 @@ header img {
 }
 
 nav {
-  /* border: solid black; */
   box-shadow: 0.1rem 0.1rem 0.2rem #00000026;
   margin-top: 1rem;
   padding: 0.5rem;
@@ -38,8 +36,6 @@ nav {
 }
 
 nav ul {
-  /* border: solid black; */
-  /* height: 100%; */
   margin: 0;
   display: flex;
   justify-content: center;
@@ -53,7 +49,6 @@ nav ul li:nth-of-type(2) a {
 }
 
 nav ul a {
-  /* border-bottom: solid #27bb6c; */
   display: block;
   padding: 0.5rem;
 }
@@ -238,19 +233,11 @@ a:not(p a) {
     padding: 1.5rem;
 }
 
-#goals * {
-  /* border: solid black; */
-}
-
 #goals article{
   display: flex;
   justify-content: space-evenly;
   gap: 5rem;
   margin-bottom: 3rem;
-}
-
-#goals article div {
-  /* width: 50%; */
 }
 
 #goals article img {
