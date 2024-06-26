@@ -1,4 +1,4 @@
-h1, h2, h3, a, p, time, blockquote {
+h1, h2, h3, h4, a, p, time, blockquote {
     margin: 0;
     font-family: sans-serif;
 }
@@ -74,6 +74,11 @@ h2 {
 h3 {
   margin-bottom: 1rem;
   margin-top: 0.5rem;
+}
+
+h4 {
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
 }
 
 time {
